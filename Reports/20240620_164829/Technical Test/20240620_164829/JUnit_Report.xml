@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Technical Test" time="5.892" tests="4" failures="0" errors="0">
+   <testsuite name="Technical Test" tests="4" failures="0" errors="0" time="5.892" skipped="0" timestamp="20-06-2024T16:48:33" hostname="Samuel Jason Rain - MSI" id="Test Suites/Technical Test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\Samuel Jason Rain\\git\\Technical-Test\\Reports\\20240620_164829\\Technical Test\\20240620_164829"/>
+         <property name="logFiles" value="C:\\Users\\Samuel Jason Rain\\git\\Technical-Test\\Reports\\20240620_164829\\Technical Test\\20240620_164829\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Samuel Jason Rain - MSI"/>
+         <property name="hostAddress" value="192.168.10.52"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="9.5.0.217"/>
+      </properties>
+      <testcase name="Test Cases/Get List Users" time="3.892" classname="Test Cases/Get List Users" status="PASSED">
+         <system-out><![CDATA[20-06-2024T16:48:33 - [TEST_CASE][PASSED] - Test Cases/Get List Users: Test Cases/Get List Users
+
+20-06-2024T16:48:34 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("GET/Get List Users")): Send request and verify the response successfully
+
+20-06-2024T16:48:37 - [MESSAGE][INFO] - HAR: C:\Users\Samuel Jason Rain\git\Technical-Test\Reports\20240620_164829\Technical Test\20240620_164829\requests\main\0.har
+
+20-06-2024T16:48:37 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+20-06-2024T16:48:37 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+20-06-2024T16:48:37 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+20-06-2024T16:48:37 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[0].first_name", "George"): Verify element property value successfully
+
+20-06-2024T16:48:37 - [MESSAGE][PASSED] - Verify element property value successfully
+
+20-06-2024T16:48:37 - [MESSAGE][PASSED] - Verify response successfully
+
+20-06-2024T16:48:37 - [MESSAGE][PASSED] - All validation steps have been passed
+
+20-06-2024T16:48:37 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+20-06-2024T16:48:37 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+20-06-2024T16:48:37 - [MESSAGE][PASSED] - Verify response status code successfully
+
+20-06-2024T16:48:37 - [TEST_STEP][PASSED] - verifyElementsCount(response, " data.first_name", 6): Verify element count successfully
+
+20-06-2024T16:48:37 - [MESSAGE][PASSED] - Verify element count successfully
+
+20-06-2024T16:48:37 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[0].first_name", "George"): Verify element property value successfully
+
+20-06-2024T16:48:37 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Get Single User" time="0.203" classname="Test Cases/Get Single User" status="PASSED">
+         <system-out><![CDATA[20-06-2024T16:48:37 - [TEST_CASE][PASSED] - Test Cases/Get Single User: Test Cases/Get Single User
+
+20-06-2024T16:48:37 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("GET/Get Single User")): Send request successfully
+
+20-06-2024T16:48:37 - [MESSAGE][INFO] - HAR: C:\Users\Samuel Jason Rain\git\Technical-Test\Reports\20240620_164829\Technical Test\20240620_164829\requests\main\1.har
+
+20-06-2024T16:48:37 - [MESSAGE][PASSED] - Send request successfully
+
+20-06-2024T16:48:37 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+20-06-2024T16:48:37 - [MESSAGE][PASSED] - Verify response status code successfully
+
+20-06-2024T16:48:37 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.email", "george.bluth@reqres.in"): Verify element property value successfully
+
+20-06-2024T16:48:38 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Post Register Succesful" time="0.867" classname="Test Cases/Post Register Succesful" status="PASSED">
+         <system-out><![CDATA[20-06-2024T16:48:38 - [TEST_CASE][PASSED] - Test Cases/Post Register Succesful: Test Cases/Post Register Succesful
+
+20-06-2024T16:48:38 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("POST/Post Register Successful")): Send request and verify the response successfully
+
+20-06-2024T16:48:38 - [MESSAGE][INFO] - HAR: C:\Users\Samuel Jason Rain\git\Technical-Test\Reports\20240620_164829\Technical Test\20240620_164829\requests\main\2.har
+
+20-06-2024T16:48:38 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+20-06-2024T16:48:38 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+20-06-2024T16:48:38 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+20-06-2024T16:48:38 - [MESSAGE][PASSED] - Verify response successfully
+
+20-06-2024T16:48:38 - [MESSAGE][PASSED] - All validation steps have been passed
+
+20-06-2024T16:48:38 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+20-06-2024T16:48:38 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+20-06-2024T16:48:38 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Put Update" time="0.722" classname="Test Cases/Put Update" status="PASSED">
+         <system-out><![CDATA[20-06-2024T16:48:38 - [TEST_CASE][PASSED] - Test Cases/Put Update: Test Cases/Put Update
+
+20-06-2024T16:48:38 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("PUT/Put Update")): Send request successfully
+
+20-06-2024T16:48:39 - [MESSAGE][INFO] - HAR: C:\Users\Samuel Jason Rain\git\Technical-Test\Reports\20240620_164829\Technical Test\20240620_164829\requests\main\3.har
+
+20-06-2024T16:48:39 - [MESSAGE][PASSED] - Send request successfully
+
+20-06-2024T16:48:39 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+20-06-2024T16:48:39 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[20-06-2024T16:48:33 - [TEST_SUITE][PASSED] - Technical Test: Test Cases/Put Update]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

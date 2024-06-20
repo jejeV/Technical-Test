@@ -1,0 +1,28 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Technical Test,,,,20-06-2024 16:48:33,20-06-2024 16:48:39,5.892s,PASSED
+,,,,,,,
+Test Cases/Get List Users,,,,20-06-2024 16:48:33,20-06-2024 16:48:37,3.892s,PASSED
+"response = sendRequestAndVerify(findTestObject(""GET/Get List Users""))",,"Mengirim Request dan Verifikasi Response
+",,20-06-2024 16:48:34,20-06-2024 16:48:37,3.358s,PASSED
+"verifyResponseStatusCode(response, 200)",,"Verifikasi Response Status Code
+",,20-06-2024 16:48:37,20-06-2024 16:48:37,0.027s,PASSED
+"verifyElementsCount(response, "" data.first_name"", 6)",,Verifikasi Jumlah Element Yang Ada,,20-06-2024 16:48:37,20-06-2024 16:48:37,0.040s,PASSED
+"verifyElementPropertyValue(response, ""data[0].first_name"", ""George"")",,"Verifikasi Element
+",,20-06-2024 16:48:37,20-06-2024 16:48:37,0.029s,PASSED
+,,,,,,,
+Test Cases/Get Single User,,,,20-06-2024 16:48:37,20-06-2024 16:48:38,0.203s,PASSED
+"response = sendRequest(findTestObject(""GET/Get Single User""))",,"Mengirimkan Request
+",,20-06-2024 16:48:37,20-06-2024 16:48:37,0.101s,PASSED
+"verifyResponseStatusCode(response, 200)",,Memverifikasi Response Status Code,,20-06-2024 16:48:37,20-06-2024 16:48:37,0.003s,PASSED
+"verifyElementPropertyValue(response, ""data.email"", ""george.bluth@reqres.in"")",,"Memverifikasi Element
+",,20-06-2024 16:48:37,20-06-2024 16:48:38,0.038s,PASSED
+,,,,,,,
+Test Cases/Post Register Succesful,,,,20-06-2024 16:48:38,20-06-2024 16:48:38,0.867s,PASSED
+"response = sendRequestAndVerify(findTestObject(""POST/Post Register Successful""))",,"Mengirimkan Request Dan Verifikasi Response
+",,20-06-2024 16:48:38,20-06-2024 16:48:38,0.803s,PASSED
+"verifyResponseStatusCode(response, 200)",,Memverifikasi Response Status Code,,20-06-2024 16:48:38,20-06-2024 16:48:38,0.002s,PASSED
+,,,,,,,
+Test Cases/Put Update,,,,20-06-2024 16:48:38,20-06-2024 16:48:39,0.722s,PASSED
+"response = sendRequest(findTestObject(""PUT/Put Update""))",,"Mengirimkan Request
+",,20-06-2024 16:48:38,20-06-2024 16:48:39,0.650s,PASSED
+"verifyResponseStatusCode(response, 200)",,Memverifikasi Response Status Code,,20-06-2024 16:48:39,20-06-2024 16:48:39,0.003s,PASSED
